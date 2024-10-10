@@ -19,15 +19,15 @@
   <meta name="author" content="Jerry Yang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="自有备份照片的习惯已经十年了，从iPhone 3G的二百万像素到现在的千万像素，越来越多的照片和视频使得备份空间需求加剧。加上年初购置的一台256GB的电脑需要额外的存储空间，于是我开始研究外置存储设备。磨盘扩容、外置硬盘还是NAS？在分析了多台设备的存储占用后，我发现我的多数数据就是照片和视频，而且还有多设备多系统文件共享的需求，于是舍弃的读写速度选择NAS方案。 因为预算有限，故只能选择组">
+    <meta name="description" content="NAS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记录一下244元组装的NAS">
 <meta property="og:url" content="http://example.com/2024/09/28/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B244%E5%85%83%E7%BB%84%E8%A3%85%E7%9A%84NAS/index.html">
 <meta property="og:site_name" content="BIGGGJerry的生活和资讯">
-<meta property="og:description" content="自有备份照片的习惯已经十年了，从iPhone 3G的二百万像素到现在的千万像素，越来越多的照片和视频使得备份空间需求加剧。加上年初购置的一台256GB的电脑需要额外的存储空间，于是我开始研究外置存储设备。磨盘扩容、外置硬盘还是NAS？在分析了多台设备的存储占用后，我发现我的多数数据就是照片和视频，而且还有多设备多系统文件共享的需求，于是舍弃的读写速度选择NAS方案。 因为预算有限，故只能选择组">
+<meta property="og:description" content="NAS">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-28T08:15:30.794Z">
-<meta property="article:modified_time" content="2024-10-10T05:43:22.423Z">
+<meta property="article:modified_time" content="2024-10-10T07:24:38.777Z">
 <meta property="article:author" content="Jerry Yang">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -263,7 +263,8 @@
             
               <div class="markdown-body">
                 
-                <span id="more"></span>
+                <p>NAS</p>
+<span id="more"></span>
 
 <p>自有备份照片的习惯已经十年了，从iPhone 3G的二百万像素到现在的千万像素，越来越多的照片和视频使得备份空间需求加剧。加上年初购置的一台256GB的电脑需要额外的存储空间，于是我开始研究外置存储设备。磨盘扩容、外置硬盘还是NAS？在分析了多台设备的存储占用后，我发现我的多数数据就是照片和视频，而且还有多设备多系统文件共享的需求，于是舍弃的读写速度选择NAS方案。</p>
 <p>因为预算有限，故只能选择组装NAS。当开始研究NAS的时候，有几个关键的东西需要选择，第一个就是板U。按照我的需求，照片和视频的读写是最重要的，我的多数视频为h264编码，少量的iPhone拍摄的视频为h265。其次最后可以用上docker来配置一个homeassistant，当然这不是最重要的需求。多数的百元价位的板U采用了15、16年附近的J1900、J3160、N3160等处理器，他们的性能差距不大，都不能解码h265视频，但看在低廉的价格上，把h265视频down下来看也不成问题。经过一晚上在闲鱼里搜查，我找到了一个80元梅捷N3150的板子，带千兆板载网卡和两条ddr3 2GB内存，唯一的缺点是非ITX主板，尺寸为19x17cm，不过这样一来可以搭载更廉价的ATX机箱。机箱选取了空气盒子的小机箱，花费44元。电源也因此可以选择ATX电源。因为整机的峰值功率也就20w，所以我以21元的价格购置了一块400w的金河田二手电源。</p>
