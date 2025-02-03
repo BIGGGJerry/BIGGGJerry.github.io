@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-11-30T07:05:14.368Z</updated>
+  <updated>2025-02-03T07:20:51.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>25年2月3日记</title>
+    <link href="http://example.com/2025/02/03/25%E5%B9%B42%E6%9C%883%E6%97%A5%E8%AE%B0/"/>
+    <id>http://example.com/2025/02/03/25%E5%B9%B42%E6%9C%883%E6%97%A5%E8%AE%B0/</id>
+    <published>2025-02-03T07:05:00.000Z</published>
+    <updated>2025-02-03T07:20:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>干中学 学中干 一切如此</p><span id="more"></span><p>回到家后发现家里的一级路由有公网IP。这是个好东西，无论是飞牛自带的转发还是去年费老劲配置的内网穿透，都远不如公网的速度，于是昨天决定把飞牛转移到公网上来。</p><p>由于飞牛+Netgear这套设备我在宿舍已经使用半年多了，许多配置都已经养成习惯，自然我希望把Netgear作为二级路由来减少修改这套稳定环境的步骤。一级路由配置静态路由，二级路由关闭NAT、打开DMZ、设置规则转发等试了好多好多，但终于是无法在一级路由下访问飞牛。一天翻遍很多相关贴子，最终还是没有解决问题。</p><p>一觉醒来，下定决心移除二级路由，把飞牛直连在一级路由上。一通操作下来，与昨日相比，似乎还简单了不少，不过是重新修改IP网关、修改一级转发、修改简单的docker配置、最终配置好DDNS，这一连串操作后再次得到了稳定的系统，并成功公网访问，比我昨天想象的简单多了。</p><p>生活也是这样吧，困窘时或许可以尝试一下过去曾认为困难的路径，说不定会柳暗花明。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;干中学 学中干 一切如此&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日记" scheme="http://example.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>《第一行代码》学习笔记</title>
